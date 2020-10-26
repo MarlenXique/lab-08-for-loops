@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var userinput = prompt("How long till the party?");
+      var usernum = parseInt(userinput, 10);
+      if (usernum < 1 ){
+        console.log("Party now!!!");
+      } else{
+        for (var i = usernum; i >= 1; i = i - 1){
+          console.log(i);
+          if (i == 1){
+            console.log("Party Time!!!!!");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
