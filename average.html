@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var total = 0;
+    var numbers = [];
+    for(var i = 0; i < 4; i++){
+      var usernumber = parseInt(prompt("Enter number"));
+      numbers.push(usernumber);
+    }
+    for (var k = 0; k < numbers.length; k++) {
+          total += numbers[k];
+    }
+    average = total/numbers.length;
+    console.log("The average is:", + average);
+    </script>
+  </body>
+</html>
