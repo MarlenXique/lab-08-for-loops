@@ -6,15 +6,19 @@
   </head>
   <body>
     <script>
-var largest = 0;
-for(var count = 0;count < 4; count++){
-  var number = prompt("Enter number");
-  var numfix = parseInt(number);
-  if(numfix >= largest){
-    largest = numfix
+    var largest = 0;
+//initiate highest number and replace zero inside four loop
+    for(var i = 0;i < 4; i++){
+      var userinput = prompt("Enter number");
+      var usernum = parseInt(userinput);
+      if(usernum >= largest){
+        largest = usernum
+        console.log("Updating largest");
+      }else{
+        console.log("This is not the highest number");
+    }
   }
-}
-console.log("Largest number:", + largest)
+  console.log("Largest number: ", + largest);
     </script>
   </body>
 </html>
